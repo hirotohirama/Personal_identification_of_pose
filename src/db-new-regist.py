@@ -35,7 +35,7 @@ nname = rnname.rstrip("\n")
 print("\nplease push key｢s｣, we need background picture!")
 
 # 背景画像取得のためのカメラキャプチャ
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 while(True):
     ret, frame = cap.read()
     if ret == False:
